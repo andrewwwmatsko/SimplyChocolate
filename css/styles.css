@@ -2,13 +2,34 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul,
 ol {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 1366px;
+  padding-left: 0 15px;
+  padding-right: 0 15px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -40,6 +61,11 @@ a {
 
 /* ==========HEADER=============== */
 
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
 .header-logo {
   color: #111;
   font-size: 18px;
@@ -68,17 +94,23 @@ a {
 /* ===========HERO============== */
 
 .hero {
-  background: rgba(17, 17, 17, 0.6);
+  padding-bottom: 80px;
+}
+
+.hero-container {
+  background-color: rgba(17, 17, 17, 0.6);
+  padding: 380px 40px 40px 40px;
+  border-radius: 30px;
 }
 
 .hero-title {
   color: #fff;
-  font-family: Montserrat;
   font-size: 28px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.03em;
+  margin-bottom: 32px;
+  max-width: 484px;
 }
 
 .hero-btn {
@@ -87,6 +119,9 @@ a {
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
+  border-radius: 100px;
+  background: #fd9222;
+  padding: 14px 40px;
 }
 
 .hero-made-link {
@@ -94,6 +129,9 @@ a {
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  padding: 14px 40px;
 }
 
 .hero-scroll-link {
@@ -110,6 +148,8 @@ a {
 
 .features {
   background: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .features-subtitle {
@@ -132,8 +172,13 @@ a {
 
 .taste {
   background: #fafafa;
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 .taste-title {
+  max-width: 412px;
+  margin: 0 auto;
+  margin-bottom: 28px;
 }
 .taste-text {
   color: #111;
@@ -141,6 +186,9 @@ a {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  max-width: 486px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 .taste-list {
 }
@@ -162,12 +210,17 @@ a {
 /* ===========MADE============== */
 
 .made {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .made-title {
+  margin-bottom: 50px;
 }
 .made-img {
 }
 .made-subtitle {
+  max-width: 350px;
+  margin-bottom: 28px;
 }
 .made-list {
 }
@@ -183,14 +236,21 @@ a {
 /* ========================= */
 
 /* ==========PRODUCTS=============== */
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .products-title {
+  margin-bottom: 50px;
 }
 .products-list {
 }
 .products-item {
 }
 .products-img {
+  margin-bottom: 8px;
+  max-width: 230px;
 }
 .products-subtitle {
   color: #111;
@@ -199,12 +259,14 @@ a {
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  margin-bottom: 2px;
 }
 .products-description {
   color: rgba(17, 17, 17, 0.7);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
+  margin-bottom: 18px;
 }
 .products-item-bnt {
   color: #111;
@@ -212,6 +274,10 @@ a {
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
+  padding: 8px 20px;
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fafafa;
 }
 
 /* ========================= */
@@ -219,14 +285,19 @@ a {
 /* ============SELLERS============= */
 
 .sellers {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .sellers-title {
+  margin-bottom: 50px;
 }
 .sellers-list {
 }
 .sellers-item {
 }
 .sellers-img {
+  max-width: 368px;
+  /* margin-bottom: 28px; */
 }
 .sellers-subtitle {
   color: #111;
@@ -235,6 +306,7 @@ a {
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  margin: 28px 72px;
 }
 
 /* ========================= */
@@ -242,8 +314,11 @@ a {
 /* ============LOVED============= */
 
 .loved {
+  margin-top: 60px;
+  margin-bottom: 120px;
 }
 .loved-title {
+  margin-bottom: 50px;
 }
 
 .loved-list {
@@ -253,6 +328,7 @@ a {
 }
 
 .loved-img {
+  margin-bottom: 18px;
 }
 
 .loved-subtitle {
@@ -261,6 +337,7 @@ a {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  margin-bottom: 24px;
 }
 
 .loved-comments {
@@ -269,6 +346,7 @@ a {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  max-width: 312px;
 }
 
 .loved-btn {
@@ -276,6 +354,10 @@ a {
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
+  border-radius: 100px;
+  border: 1px solid #fd9222;
+  margin-top: 50px;
+  padding: 14px 40px;
 }
 
 /* ========================= */
@@ -284,6 +366,8 @@ a {
 
 .footer {
   background: #1e1823;
+  padding-top: 50px;
+  padding-left: 32px;
 }
 
 .footer-title {
@@ -304,6 +388,7 @@ a {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
+  margin-bottom: 14px;
 }
 
 .footer-soc-list {
@@ -314,6 +399,7 @@ a {
 }
 
 .footer-address-list {
+  margin-bottom: 74px;
 }
 
 .footer-address-item {
