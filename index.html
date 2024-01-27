@@ -21,11 +21,13 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-menu">
           <a class="header-logo" href="./index.html"
-            ><span class="header-logo-italic">SIMPLY</span> CHOCOLATE</a
-          >
+            ><span class="header-logo-italic">SIMPLY</span> CHOCOLATE<img
+              src="./images/chocolate.svg"
+              alt="Chocolate icon"
+          /></a>
           <ul class="header-menu-list">
             <li class="header-menu-item">
               <a class="header-menu-link" href="">Home</a>
@@ -39,10 +41,22 @@
           </ul>
         </nav>
 
-        <ul>
-          <li>Instagram</li>
-          <li>Facebook</li>
-          <li>Twitter</li>
+        <ul class="header-soc-list">
+          <li>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img src="./images/instagram.svg" alt="Instagram icon" />
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img src="./images/facebook.svg" alt="Facebook icon" />
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img src="./images/twitter.svg" alt="Twitter icon" />
+            </a>
+          </li>
         </ul>
       </div>
     </header>
@@ -50,14 +64,16 @@
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <h1 class="hero-title title">
+          <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
 
-          <button class="hero-btn" type="button">Buy now</button>
-          <a class="hero-made-link" href="">How it's made</a>
-          <a class="hero-scroll-link" href="">Scroll down</a>
+          <div class="hero-btn-group">
+            <button class="hero-btn" type="button">Buy now</button>
+            <a class="hero-made-link" href="">How it's made</a>
+            <a class="hero-scroll-link" href="">Scroll down</a>
+          </div>
         </div>
       </section>
 
@@ -187,47 +203,53 @@
       <section class="made">
         <div class="container">
           <h2 class="made-title title">hOW IT’S <span>made?</span></h2>
-          <img
-            class="made-img"
-            src="./images/liquid-chocolate.jpg"
-            alt="Hot chocolate"
-            width="600"
-            height="400"
-          />
-          <h3 class="made-subtitle">
-            Try our chocolates today and discover the perfect balance of flavor
-          </h3>
-          <ul class="made-list">
-            <li class="made-item">
-              <p class="made-description">
-                Heat the milk in a saucepan without bringing it to a boil. Add
-                sugar and cocoa powder.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-description">
-                At the same time, prepare a water bath. Melt the butter on it.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-description">
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly
-                with a silicone spatula so that the mass becomes uniform and
-                silky.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-description">
-                Heat the mixture over low heat, letting it barely boil.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-description">
-                Pour the chocolate into special containers (can be replaced with
-                ice molds). Allow to cool and harden.
-              </p>
-            </li>
-          </ul>
+          <div class="made-container">
+            <img
+              class="made-img"
+              src="./images/liquid-chocolate.jpg"
+              alt="Hot chocolate"
+              width="600"
+              height="400"
+            />
+            <div class="made-subcontainer">
+              <h3 class="made-subtitle">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
+              <ul class="made-list">
+                <li class="made-item">
+                  <p class="made-description">
+                    Heat the milk in a saucepan without bringing it to a boil.
+                    Add sugar and cocoa powder.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-description">
+                    At the same time, prepare a water bath. Melt the butter on
+                    it.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-description">
+                    "Mix" the milk mixture and already liquid butter. Mix
+                    thoroughly with a silicone spatula so that the mass becomes
+                    uniform and silky.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-description">
+                    Heat the mixture over low heat, letting it barely boil.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-description">
+                    Pour the chocolate into special containers (can be replaced
+                    with ice molds). Allow to cool and harden.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -322,7 +344,7 @@
             <li class="sellers-item">
               <img
                 class="sellers-img"
-                src="./images/chocolate-with-fruits.jpg"
+                src="./images/chocolate-with-nuts.jpg"
                 alt="Chocolate with fruits"
               />
               <h3 class="sellers-subtitle">CHOCOLATE WITH NUTS</h3>
@@ -330,7 +352,7 @@
             <li class="sellers-item">
               <img
                 class="sellers-img"
-                src="./images/chocolate-with-nuts.jpg"
+                src="./images/chocolate-with-fruits.jpg"
                 alt="Chocolate with nuts"
               />
               <h3 class="sellers-subtitle">CHOCOLATE WITH FRUITS</h3>
@@ -348,7 +370,7 @@
       </section>
 
       <section class="loved">
-        <div class="container">
+        <div class="container loved-container">
           <h2 class="loved-title title"><span>chocolate</span> is loved</h2>
           <ul class="loved-list">
             <li class="loved-item">
@@ -388,46 +410,60 @@
     </main>
 
     <footer class="footer">
-      <h2 class="footer-title">
-        <span>Chocolate</span> a delicious cure for a bad day
-      </h2>
+      <div class="footer-top-part">
+        <h2 class="footer-title">
+          <span>Chocolate</span> a delicious cure for a bad day
+        </h2>
 
-      <p class="footer-subtitle">Social networks</p>
-      <ul class="footer-soc-list">
-        <li>Instagram</li>
-        <li>Facebook</li>
-        <li>Twitter</li>
-      </ul>
+        <div class="footer-lists">
+          <div class="footer-social-networks">
+            <p class="footer-subtitle">Social networks</p>
+            <ul class="footer-soc-list">
+              <li class="footer-soc-list-item">Instagram</li>
+              <li class="footer-soc-list-item">Facebook</li>
+              <li class="footer-soc-list-item">Twitter</li>
+            </ul>
+          </div>
 
-      <p class="footer-subtitle">Contact us</p>
-      <address class="footer-address">
-        <ul class="footer-address-list">
-          <li class="footer-address-item">
-            <a class="footer-address-link" href="tel:+380684439426"
-              >+380 (68) 443-94-26</a
-            >
-          </li>
-          <li class="footer-address-item">
-            <a class="footer-address-link" href="mailto:simplychoc@gmail.com"
-              >simplychoc@gmail.com</a
-            >
-          </li>
-        </ul>
-      </address>
+          <div class="footer-contact-us">
+            <p class="footer-subtitle">Contact us</p>
+            <address class="footer-address">
+              <ul class="footer-address-list">
+                <li class="footer-address-item">
+                  <a class="footer-address-link" href="tel:+380684439426"
+                    >+380 (68) 443-94-26</a
+                  >
+                </li>
+                <li class="footer-address-item">
+                  <a
+                    class="footer-address-link"
+                    href="mailto:simplychoc@gmail.com"
+                    >simplychoc@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+      </div>
 
-      <nav class="footer-navigation">
-        <ul class="footer-navigation-menu">
-          <li class="footer-menu-item">
-            <a class="footer-menu-link" href="">How it's made?</a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="footer-menu-link" href="">Home</a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="footer-menu-link" href="">Chocolate is loved</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="footer-bottom-part">
+        <nav class="footer-navigation">
+          <ul class="footer-navigation-menu">
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="">How it's made?</a>
+            </li>
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="">Home</a>
+            </li>
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="">Chocolate is loved</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button type="button" class="footer-subscribe-btn">Subscribe</button>
+      </div>
     </footer>
   </body>
 </html>
