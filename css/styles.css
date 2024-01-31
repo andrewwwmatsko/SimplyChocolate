@@ -77,6 +77,11 @@ button {
   justify-content: space-between;
 }
 
+.header-icon {
+  fill: transparent;
+  stroke: #111111;
+}
+
 .header-logo {
   color: #111;
   font-size: 18px;
@@ -99,6 +104,7 @@ button {
 
 .header-menu-list {
   display: flex;
+  align-items: center;
   gap: 24px;
 }
 
@@ -120,6 +126,11 @@ button {
   gap: 14px;
 }
 
+.header-link-icon:hover .header-icon,
+.header-link-icon:focus .header-icon {
+  stroke: #fd9222;
+}
+
 /* ========================= */
 
 /* ===========HERO============== */
@@ -132,6 +143,14 @@ button {
   background-color: rgba(17, 17, 17, 0.6);
   padding: 380px 40px 40px 40px;
   border-radius: 30px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../images/chocolate_main.jpg);
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 .hero-title {
@@ -162,6 +181,12 @@ button {
   border: none;
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+
 .hero-made-link {
   color: #fff;
   font-size: 14px;
@@ -172,6 +197,12 @@ button {
   padding: 14px 40px;
 }
 
+.hero-made-link:hover,
+.hero-made-link:focus {
+  color: #fd9222;
+  border: 1px solid #fd9222;
+}
+
 .hero-scroll-link {
   color: #fff;
   font-size: 14px;
@@ -180,6 +211,11 @@ button {
   letter-spacing: -0.03em;
   margin-left: auto;
   background-color: transparent;
+}
+
+.hero-scroll-link:hover,
+.hero-scroll-link:focus {
+  color: #fd9222;
 }
 
 /* ========================= */
@@ -344,6 +380,19 @@ button {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.made-description::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #4c4c4c;
+  border-radius: 50%;
+  border: 1px solid #eceded;
+  flex-shrink: 0;
 }
 
 /* ========================= */
@@ -473,9 +522,8 @@ button {
 .loved-img {
   margin-bottom: 18px;
   position: absolute;
-  top: -25%;
-  left: 140px;
-  right: 140px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .loved-subtitle {
@@ -508,6 +556,13 @@ button {
   margin-top: 50px;
   padding: 14px 40px;
   align-self: center;
+  background-color: transparent;
+}
+
+.loved-btn:hover,
+.loved-btn:focus {
+  color: #ffffff;
+  background-color: #fd9222;
 }
 
 .loved-container {
@@ -614,6 +669,11 @@ button {
   letter-spacing: -0.02em;
 }
 
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: #fd9222;
+}
+
 .footer-subscribe-btn {
   color: #fff;
   font-size: 14px;
@@ -623,6 +683,16 @@ button {
   background: #fd9222;
   padding: 17px 40px;
   border: none;
+}
+
+.footer-icon {
+  fill: transparent;
+  stroke: #ffffff;
+}
+
+.footer-link-icon:hover .footer-icon,
+.footer-link-icon:focus .footer-icon {
+  stroke: #fd9222;
 }
 
 /* ========================= */
